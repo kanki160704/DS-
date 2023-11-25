@@ -1,1 +1,10 @@
-
+# 点
+匹配除换行符以外所有字符 
+例如：
+'''
+import re
+content = '红色\n黄色\n蓝色\n'
+p = re.compile(r'.色')
+for one in p.findall(content):
+  print(one)
+'''
